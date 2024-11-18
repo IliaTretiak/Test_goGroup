@@ -84,6 +84,11 @@
     line-height: 30.77px;
     color: #ffffff;
 }
+.articles__containerOfContent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 .articles__content {
     color: #2F222266;
 }
@@ -115,6 +120,7 @@
     cursor: pointer;
 }
 .articles__wide_double {
+    width: 70%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -264,10 +270,11 @@
         background: #5D71DD;
         border-radius: 20px;
         border: 1px solid #5D71DD;
-        padding: 13.5px 5px;
+        padding: 11.5px 5px;
         font-size: 18px;
         font-weight: 400;
         line-height: 23.08px;
+        height: 50px;
     }
     .articles__button:hover{
         background: #6C7DD8;

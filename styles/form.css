@@ -46,6 +46,7 @@
     font-weight: 400;
     line-height: 23.08px;
     cursor: pointer;
+    height: 50px;
 }
 .form__button:hover{
     background: #6C7DD8;
@@ -53,7 +54,6 @@
     outline: 0.01px solid #6C7DD8;
 }
 @media (max-width: 1024px) {
-    
     .form {
         display: flex;
         flex-direction: column;
