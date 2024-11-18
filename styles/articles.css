@@ -18,7 +18,7 @@
 }
 .articles__title:hover {
     box-shadow: 4px 8px 40px 0px #08186F33;
-}
+} 
 .articles__view {
     display: flex;
     flex-direction: column;
