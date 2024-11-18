@@ -1,0 +1,39 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    padding-left: 13%;
+    padding-right: 13%;
+}
+.header__nav {
+    display: flex;
+    gap: 40px;
+    justify-content: end;
+}
+.header__navItem {
+    text-decoration: none;
+    color: #2F2222;
+}
+.header__navItem_active {
+    text-underline-offset: 1px;
+    text-decoration: underline;
+    text-decoration-color: #5D71DD;
+    text-underline-position: under;
+}
+.header__navContact {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    color: #5D71DD;
+    cursor: pointer;
+    align-items: center;
+}
+@media (max-width: 1024px) {
+
+}
+@media (max-width: 320px) {
+    .header {
+        display: none;
+    }
+}

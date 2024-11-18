@@ -1,0 +1,105 @@
+.form {
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto; 
+    row-gap: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 40px 30px;
+}
+.form__title {
+    font-size: 24px;
+    font-weight: 450;
+    line-height: 30.77px;
+    text-align: center;
+}
+.form__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form__input {
+    background: #F5F5F5;
+    padding: 13px 32px 13px 30px;
+    border-radius: 20px;
+    border: 1.5px solid #F5F5F5;
+    height: 22px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.08px;
+    cursor: pointer;
+}
+.form__input:hover{
+    border: 1.5px solid #5D71DD
+}
+.form__button {
+    display: flex;
+    gap: 10px;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    background: #5D71DD;
+    border-radius: 20px;
+    border: 1px solid #5D71DD;
+    padding: 11px 65px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.08px;
+    cursor: pointer;
+}
+.form__button:hover{
+    background: #6C7DD8;
+    border: 1.5px solid #6C7DD8;
+    outline: 0.01px solid #6C7DD8;
+}
+@media (max-width: 1024px) {
+    
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .form__title {
+        padding-left: 13%;
+        text-align: start;
+    }
+    .form__container {
+        flex-direction: row;
+        justify-content: center;
+        padding-right: 13%;
+        padding-left: 13%;
+    }
+    .form__input {
+        width: 75%;
+    }
+}
+@media (max-width: 320px) {
+    .form {
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto; 
+        row-gap: 30px;
+        background-color: #ffffff;
+        border-radius: 0px;
+        padding-top: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .form__title {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 30.77px;
+        text-align: center;
+        padding-left: 0px;
+    }
+    .form__input {
+        width: auto;
+    }
+    .form__container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0px;
+    }
+
+}
