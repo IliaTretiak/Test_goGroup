@@ -15,6 +15,7 @@
     padding: 40px;
     border: none;
     cursor: pointer;
+    height: 200px;
 }
 .articles__title:hover {
     box-shadow: 4px 8px 40px 0px #08186F33;
@@ -33,6 +34,7 @@
 .articles__header_narrow {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 30px;
 }
 .articles__catagory {
@@ -41,25 +43,30 @@
     background-color: #F7F8FD;
     color: #5D71DD;
 }
+.articles__catagory:hover {
+    background-color: #5D71DD26;
+}
 .articles__catagory_narrow {
     padding: 8px 16px;
     border-radius: 8px;
     background-color: #7D8DE4;
     color: #ffffff;
-    width: 85px;
     font-size: 16px;
     font-weight: 400;
     line-height: 20.51px;
 }
 .articles__catagory_withBack {
+    display: flex;
     padding: 8px 16px;
     border-radius: 8px;
     background-color: #FFFFFF33;
-    width: 185px;
     color: #ffffff;
     font-size: 16px;
     font-weight: 400;
     line-height: 20.51px;
+}
+.articles__catagory_withBack:hover {
+    background-color: #FFFFFF66;
 }
 .articles__date {
     font-size: 16px;
@@ -78,9 +85,20 @@
     font-weight: 450;
     line-height: 30.77px;
 }
+.articles__titleContent_sec {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30.77px;
+}
 .articles__titleContent_narrow {
     font-size: 24px;
     font-weight: 450;
+    line-height: 30.77px;
+    color: #ffffff;
+}
+.articles__titleContent_narrowSec {
+    font-size: 24px;
+    font-weight: 400;
     line-height: 30.77px;
     color: #ffffff;
 }
@@ -106,6 +124,7 @@
     border-radius: 20px;
     padding: 40px;
     cursor: pointer;
+    height: 320px;
 }
 .articles__wide:hover {
     box-shadow: 4px 8px 40px 0px #08186F33;
@@ -118,9 +137,11 @@
     border-radius: 20px;
     padding: 30px 40px;
     cursor: pointer;
+    height: 180px;
 }
 .articles__wide_double {
     width: 70%;
+    height: 400px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -129,7 +150,7 @@
     box-shadow: 4px 8px 40px 0px #08186F33;
 }
 .articles__narrow {
-    width: 30%;
+    width: 30.558%;
     background-color: #5D71DD;
     display: flex;
     flex-direction: column;
@@ -138,6 +159,7 @@
     border-radius: 20px;
     padding: 40px 30px;
     cursor: pointer;
+    height: 320px;
 }
 .articles__narrow:hover {
     box-shadow: 4px 8px 40px 0px #08186F33;
@@ -147,7 +169,7 @@
     background-color: #ffffff;
 }
 .articles__narrow_withBackSpace {
-    width: 30%;
+    width: 26.94%;
     background-image: 
         url('../public/images/space.jpg');
     display: flex;
@@ -168,7 +190,8 @@
     box-shadow: 4px 8px 40px 0px #08186F33;
 }
 .articles__narrow_withBackStars {
-    width: 30%;
+    width: 26.94%;
+    height: 320px;
     background-image: 
         url('../public/images/milkyway.jpg');
     display: flex;
@@ -207,6 +230,7 @@
 @media (max-width: 320px) {
     .articles__catagory,
     .articles__titleContent,
+    .articles__titleContent_sec,
     .articles__date,
     .articles__header_narrow,
     .articles__date_narrow,

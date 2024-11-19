@@ -32,6 +32,9 @@
 .form__input:hover{
     border: 1.5px solid #5D71DD
 }
+.form__input::placeholder {
+    color: #2F222266;
+}
 .form__button {
     display: flex;
     gap: 10px;
